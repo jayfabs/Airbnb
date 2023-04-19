@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Airbnb_Melbourne</title>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.0/chart.min.js" 
+  integrity="sha512-R60W3LgKdvvfwbGbqKusRu/434Snuvr9/Flhtoq9cj1LQ9P4HFKParULqOCAisHk/J4zyaEWWjiWIMuP13vXEg==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <h1>Welcome to Melboune Airbnb Dashboard!</h1>
+
+  
+</head>
+
+<body>
+  
+  <!-- The div that holds our map -->
+  <div id="container">
+    
+    <select id="mapSelector">
+      <option value="maps">Listings</option>
+      <option value="map">Heat Map</option>
+    </select>
+    <select id="price">
+      <option value="all">All Prices</option>
+      <option value="1"> $0-$50</option>
+      <option value="2">$51-$100</option>
+      <option value="3">$101-$200</option>
+      <option value="4">$201-$300</option>
+      <option value="5">$301-$400</option>
+      <option value="6">$401+</option>
+    </select>
+    <div class="container">
+      <div id="map" hidden></div>
+      <div id="maps"></div>
+    </div>
+  </div>
+  <div id="chart-container">
+    <canvas id="neighborhoods"></canvas>
+    <canvas id="ratings"></canvas>
+    <canvas id="host"></canvas>
+    <canvas id="acquisitions"></canvas>
+  </div>
+  
+
+</div>
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+  <!-- D3 JavaScript -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <!-- API key -->
+  <!-- <script type="text/javascript" src="static/js/config.js"></script>  -->
+  <!-- Our JavaScript -->
+  
+  <script type="text/javascript" src="static/js/data.js"></script>
+  <script type="text/javascript" src="static/js/logic.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
+
+</body>
+
+</html>

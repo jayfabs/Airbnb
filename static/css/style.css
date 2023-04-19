@@ -1,0 +1,122 @@
+h1 {
+  font-family: monospace;
+  
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: #E9F8F9;
+background-size: 400% 400%;
+height: 100vh;
+}
+
+.info.legend {
+  background-color: white !important;
+  background: rgba(255,255,255,0.8) !important;
+  padding: 0;
+  margin: 0;
+}
+
+
+.container {
+margin-top: auto;
+}
+
+#map {
+  position: absolute;
+  top: 130;
+  left: 0;
+  width: 70%;
+  height: 85vh;
+}
+#maps {
+  position: absolute;
+  top: 130;
+  left: 0;
+  width: 70%;
+  height: 85vh;
+}
+
+
+#chart-container {
+  position: absolute;
+  top: 130;
+  right: 0;
+  width: 30%;
+  height: 85vh;
+  background-color: #E9F8F9 !important;
+  overflow: scroll;
+  border-bottom: 1px solid #ccc;
+}
+
+#acquisitions {
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #ccc;
+}
+#neighborhoods {
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+#ratings {
+  border-bottom: 1px solid #ccc;
+}
+
+#host {
+  width: 10%;
+  height: 10%;
+  border-bottom: 1px solid #ccc;
+}
+
+#price {
+  background-color: #f2f2f2;
+  border: none;
+  color: #777171;
+  font-size: 16px;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#price:hover {
+  background-color: #555;
+  color: #f2f2f2;
+}
+
+#price option {
+  background-color: #f2f2f2;
+  color: #555;
+}
+
+#mapSelector {
+  background-color: #f2f2f2;
+  border: none;
+  color: #777171;
+  font-size: 16px;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#mapSelector:hover {
+  background-color: #555;
+  color: #f2f2f2;
+}
+
+#mapSelector option {
+  background-color: #f2f2f2;
+  color: #555;
+}
+

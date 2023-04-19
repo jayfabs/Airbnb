@@ -1,0 +1,1 @@
+let queryurl = "https://gist.githubusercontent.com/jayfabs/dd989456f1279747184fe921d3287044/raw/e97d8207dbcde0e3a7678055717163e0834b58cc/airbnb_melbourne"
